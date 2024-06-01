@@ -1,24 +1,54 @@
-.TodoApp {
-  text-align: center;
-  margin: 20px auto;
-  max-width: 400px;
-  font-family: Arial, sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+.todobg{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+ display: flex;
+ align-items: center;
+
+
 }
 
+
+.TodoApp {
+  text-align: center;
+  background-color: rgb(154, 255, 205);
+  border: 3px solid rgb(252, 207, 250);
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 80%;
+  min-width: 70%;
+  font-family: Arial, sans-serif;
+}
+.title{
+  font-size: 3rem;
+  font-family: cursive;
+  padding: 10px;
+}
 .task-input {
   margin-bottom: 20px;
+ 
 }
 
 .task-input input {
   padding: 10px;
   font-size: 16px;
-  margin-right: 10px;
+  margin-right: 0px;
   width: calc(100% - 100px);
+  border-radius: 12px 0px 0px 12px;
+  
 }
 
 .task-input button {
   padding: 10px;
   font-size: 16px;
+  border-radius: 0px 12px 12px 0px;
+  border: 2px solid black;
 }
 
 .task-list {

@@ -49,7 +49,7 @@ function TodoApp() {
 
   return (
     <div className="TodoApp">
-      <h1>Todo List</h1>
+      <h1 className='title'>Todo List</h1>
       <div className="task-input">
         <input
           type="text"
@@ -77,7 +77,7 @@ function TodoApp() {
                 <div>
                 <FontAwesomeIcon className="btn btn-primary" icon={faPenToSquare} onClick={() => startEditTask(task)}/> 
 
-                <FontAwesomeIcon className="btn btn-danger" icon={faTrash} onClick={() => deleteTask(task.id)}/>
+                <FontAwesomeIcon className="btn btn-danger m-1" icon={faTrash} onClick={() => deleteTask(task.id)}/>
                  
                  
                 </div>
